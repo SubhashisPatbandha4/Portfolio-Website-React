@@ -1,38 +1,121 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0 ,400;0,600;0,900;1,100;1,200;1,400;1,500;1,600;1,900&family=Roboto:ital,wght@0,100;0,300;0,900;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --colorBg: rgb(76, 13, 178);
+  --colorBgVarient: rgb(13, 13, 95);
+  --colorPrimary: rgb(32, 131, 181);
+  --colorPrimaryCarient: rgb(10, 60, 85);
+  --colorWhite: rgb(255, 255, 255);
+  --colorLight: rgb(220, 218, 226);
+
+  --tansition: all 400ms ease;
+
+  --containerWidthLg: 75%;
+  --containerWidthMd: 86%;
+  --containerWidthSm: 90%;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--colorBg);
+  color: var(--colorWhite);
+  line-height: 1.7;
+
+  background-image: url(./assets/candyhole.png);
+}
+
+/* General Styles */
+.container {
+  width: var(--containerWidthLg);
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: weight 500px;
+}
+h1 {
+  size: 2.5rem;
+}
+section {
+  margin-top: 8rem;
+}
+section > h2,
+section > h5 {
   text-align: center;
+  color: var(--colorLight);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section > h2 {
+  color: var(--colorPrimary);
+  margin-bottom: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-light {
+  color: var(--colorLight);
+}
+a {
+  color: var(--colorPrimary);
+  transition: var(--tansition);
+}
+a:hover {
+  color: var(--colorWhite);
+}
+.btn {
+  width: fit-content;
+  display: inline-block;
+  color: var(--colorPrimary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--colorPrimary);
+  transition: var(--tansition);
+}
+.btn:hover {
+  background-color: var(--colorWhite);
+  color: var(--colorBg);
+  border-color: transparent;
+}
+.btn-primary {
+  background-color: var(--colorPrimary);
+  color: var(--colorBg);
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* end of general classes */
+/* ========================================media queries for ( MEDIUM DEVICES ) ================================ */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--containerWidthMd);
+  }
+  section {
+    margin-top: 6rem;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ========================================media queries for ( SMALL DEVICES ) ================================ */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--containerWidthSm);
   }
-  to {
-    transform: rotate(360deg);
+  section > h2 {
+    margin-top: 2rem;
   }
 }
