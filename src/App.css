@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 :root {
-  --colorBg: rgb(76, 13, 178);
+  --colorBg: rgb(27, 3, 73);
   --colorBgVarient: rgb(13, 13, 95);
   --colorPrimary: rgb(32, 131, 181);
   --colorPrimaryCarient: rgb(10, 60, 85);
@@ -35,7 +35,7 @@ body {
   color: var(--colorWhite);
   line-height: 1.7;
 
-  background-image: url(./assets/candyhole.png);
+  background-image: url(./assets/bg_image.png);
 }
 
 /* General Styles */

@@ -1,0 +1,89 @@
+header {
+  height: 100vh;
+  /* background-color: #fff; */
+  padding-top: 5rem;
+  overflow: hidden;
+}
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.header_container h1{
+  letter-spacing: 0.5rem;
+}
+/* call to action ================= */
+.CallToAction {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+/* header Socials================== */
+.headerSocials {
+  border-radius: 10rem;
+  width: 3rem;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  margin-bottom: 3rem;
+  bottom: 5rem;
+  transition-duration: 1s;
+}
+.headerSocials:hover {
+  gap: 2rem;
+}
+/* ==========me============== */
+.me {
+  background-image: linear-gradient(var(--colorPrimary), transparent);
+
+  width: 25rem;
+  position: absolute;
+  left: calc(50% - 12.5rem);
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  border-radius: 12rem;
+  overflow: hidden;
+  padding: 1.5rem 1.5rem;
+  transition-duration:  1s;
+}
+.me:hover {
+
+  margin-top: 2.5rem;
+  width: 26rem;
+  /* width: 25.1rem; */
+}
+/* ==========scroll down============ */
+.scrollDown {
+  position: absolute;
+  right: -7rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.8rem;
+  bottom: 11rem;
+  letter-spacing: 1rem;
+}
+
+/* end of general classes */
+/* ========================================media queries for ( MEDIUM DEVICES ) ================================ */
+@media screen and (max-width: 1024px) {
+  .container {
+    /* background-color: red; */
+    height: 68vh;
+  }
+}
+/* ========================================media queries for ( SMALL DEVICES ) ================================ */
+@media screen and (max-width: 600px) {
+  .container {
+    /* background-color: red; */
+    height: 100vh;
+  }
+  .headerSocials,
+  .scrollDown {
+    display: none;
+  }
+}
