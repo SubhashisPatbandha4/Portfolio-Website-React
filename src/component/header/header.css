@@ -1,7 +1,7 @@
 header {
   height: 100vh;
-  /* background-color: #fff; */
-  padding-top: 5rem;
+  
+  padding-top: 4rem;
   overflow: hidden;
 }
 .header_container {
@@ -44,17 +44,17 @@ header {
   width: 25rem;
   position: absolute;
   left: calc(50% - 12.5rem);
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-bottom: 3rem;
   border-radius: 12rem;
   overflow: hidden;
   padding: 1.5rem 1.5rem;
-  transition-duration:  1s;
+  transition-duration:  0.9s;
 }
 .me:hover {
 
   margin-top: 2.5rem;
-  width: 26rem;
+  width: 25.3rem;
   /* width: 25.1rem; */
 }
 /* ==========scroll down============ */
