@@ -68,8 +68,7 @@ header {
 /* ========================================media queries for ( MEDIUM DEVICES ) ================================ */
 @media screen and (max-width: 1024px) {
   .container {
-    /* background-color: red; */
-    height: 68vh;
+    height:fit-content;
   }
 
 }
@@ -77,7 +76,7 @@ header {
 @media screen and (max-width: 600px) {
   .container {
 
-    height: 100vh;
+    height:fit-content;
   }
   .me{
     width:20rem;
