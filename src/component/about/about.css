@@ -28,7 +28,7 @@
   gap: 1.5rem;
 }
 .about_card {
-  background: var(--colorBgVarient);
+  background: var(--colorBgVariant);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -37,7 +37,7 @@
 }
 .about_card:hover {
   background: transparent;
-  border-color: var(--colorPrimaryVarient);
+  border-color: var(--colorPrimaryVariant);
   cursor: default;
 }
 .about_card h5 {

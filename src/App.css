@@ -11,9 +11,9 @@
 }
 :root {
   --colorBg: rgb(27, 3, 73);
-  --colorBgVarient: rgb(13, 13, 95);
+  --colorBgVariant: rgb(13, 13, 95);
   --colorPrimary: rgb(32, 131, 181);
-  --colorPrimaryVarient: rgb(10, 60, 85);
+  --colorPrimaryVariant: rgb(10, 60, 85);
   --colorWhite: rgb(255, 255, 255);
   --colorLight: rgb(220, 218, 226);
 
@@ -56,7 +56,6 @@ h1 {
 }
 section {
   margin-top: 8rem;
-  
 }
 section > h2,
 section > h5 {
@@ -85,7 +84,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--colorPrimary);
-  transition: var(--tansition);
+  transition: var(--transition);
 }
 .btn:hover {
   background-color: var(--colorWhite);
@@ -116,7 +115,7 @@ img {
   .container {
     width: var(--containerWidthSm);
   }
-  section > h2 {
-    margin-top: 2rem;
+  section {
+    margin-top: 3rem;
   }
 }

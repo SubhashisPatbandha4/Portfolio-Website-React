@@ -7,7 +7,7 @@ const Services = () => {
       <h5>What i offer</h5>
       <h2>services</h2>
       <div className="container services_container">
-        <article className="service">
+        <div className="service">
           <div className='service_head'>
 
             <h3>UO/UX Designs</h3>
@@ -39,9 +39,9 @@ const Services = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, totam.</p>
             </li>
           </ul>
-        </article>
+        </div>
         {/* END OF UI/UX */}
-        <article className="service">
+        <div className="service">
           <div className='service_head'>
             <h3>Web Development</h3>
           </div>
@@ -71,7 +71,7 @@ const Services = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, totam.</p>
             </li>
           </ul>
-        </article>
+        </div>
         {/* END OF WEB DEVELOPMENT */}
 
       </div>

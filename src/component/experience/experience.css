@@ -5,7 +5,7 @@
   gap: 2rem;
 }
 .experience_container > div {
-  background: var(--colorBgVarient);
+  background: var(--colorBgVariant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
