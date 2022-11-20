@@ -12,7 +12,9 @@ nav {
   gap: 2rem;
   border-radius: 3rem;
   /* backdrop-filter:blur(16px); */
+ 
 }
+
 nav a {
   background: transparent;
   padding: 0.4rem;
@@ -20,9 +22,11 @@ nav a {
   display: flex;
   color: var(--colorLight);
   font-size: 1rem;
+  transition: var(--transition);
 }
 nav a:hover {
   background: var(--colorPrimary);
+  transform: scale(1.5);
 }
 nav a.active {
   background: var(--colorPrimary);
