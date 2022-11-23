@@ -1,4 +1,9 @@
 h1 {
+<<<<<<< HEAD
   color: rgb(0, 41, 128);
   
+=======
+  background-color:white
+  color: green;
+>>>>>>> 6f00e8544a214850586c82968792f2efee7d76c8
 }
